@@ -3,7 +3,6 @@
 "use client";
 
 import { supabase } from "@/libs/supabaseClient";
-import { useHref } from "react-router-dom";
 
 export default function Home() {
   const login = async () => {
