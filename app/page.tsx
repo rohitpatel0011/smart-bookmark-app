@@ -1,7 +1,5 @@
 /** @format */
-
 "use client";
-
 import { supabase } from "@/libs/supabaseClient";
 
 export default function Home() {

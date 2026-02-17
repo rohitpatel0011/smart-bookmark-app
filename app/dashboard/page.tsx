@@ -1,7 +1,5 @@
 /** @format */
-
 "use client";
-
 import { useEffect, useState } from "react";
 import { supabase } from "@/libs/supabaseClient";
 import BookmarkForm from "@/components/BookmarkForm";
