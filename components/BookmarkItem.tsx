@@ -2,7 +2,7 @@
 
 "use client";
 
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "@/libs/supabaseClient";
 
 export default function BookmarkItem({ bookmark }: any) {
   const deleteBookmark = async () => {

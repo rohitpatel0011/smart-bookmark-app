@@ -3,7 +3,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "@/libs/supabaseClient";
 import BookmarkItem from "./BookmarkItem";
 
 export default function BookmarkList({ user }: any) {

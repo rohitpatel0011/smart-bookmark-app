@@ -2,7 +2,8 @@
 
 "use client";
 
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "@/libs/supabaseClient";
+import { useHref } from "react-router-dom";
 
 export default function Home() {
   const login = async () => {
@@ -16,7 +17,10 @@ export default function Home() {
 
   return (
     <div className="flex h-screen items-center justify-center">
-      <button onClick={login}>Sign in with Google</button>
+      <button onClick={login}>
+
+        Sign in with Google
+      </button>
     </div>
   );
 }

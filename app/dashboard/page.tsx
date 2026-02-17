@@ -3,7 +3,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "@/libs/supabaseClient";
 import BookmarkForm from "@/components/BookmarkForm";
 import BookmarkList from "@/components/BookmarkList";
 

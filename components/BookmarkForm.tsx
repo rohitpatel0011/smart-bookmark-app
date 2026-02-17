@@ -3,7 +3,7 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "@/libs/supabaseClient";
 
 export default function BookmarkForm({ user }: any) {
   const [title, setTitle] = useState("");
