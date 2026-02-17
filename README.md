@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Bookmark App
 
-## Getting Started
+## Live Demo
+https://your-vercel-url.vercel.app
 
-First, run the development server:
+## Features
+- Google OAuth login (no email/password)
+- Add bookmarks (title + URL)
+- Bookmarks are private per user
+- Real-time updates across multiple tabs
+- Delete own bookmarks
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- Next.js (App Router)
+- Supabase (Auth, Database, Realtime)
+- Tailwind CSS
+- Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It Works
+- Google authentication handled via Supabase
+- Row Level Security (RLS) ensures users can only access their own bookmarks
+- Supabase Realtime updates bookmarks instantly across tabs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Challenges Faced
+1. Realtime WebSocket issue in development (React Strict Mode)
+   - Fixed by adjusting effect handling.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Build error due to unused Supabase SSR setup
+   - Removed server-side Supabase utilities.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+Deployed on Vercel with environment variables configured.
