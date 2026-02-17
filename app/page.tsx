@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <div className="flex h-screen items-center justify-center">
       <button onClick={login}>
-
         Sign in with Google
       </button>
     </div>
