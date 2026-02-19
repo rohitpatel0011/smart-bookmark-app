@@ -1,7 +1,7 @@
 # Smart Bookmark App
 
 ## Live Demo
-https://your-vercel-url.vercel.app
+[https://your-vercel-url.vercel.app](https://smart-bookmark-app-seven-theta.vercel.app/)
 
 ## Features
 - Google OAuth login (no email/password)
